@@ -18,6 +18,7 @@
       }
     }
   </script>
+  <link rel="icon" type="image/svg+xml" href="public/svg/LOGO.svg">
 </head>
 
 <body class="relative min-h-screen overflow-hidden font-sans" style="background-image: url('public/images/HEADER-BACKGROUND.png'); background-size: cover; background-position: center;">
@@ -42,9 +43,10 @@
         anonyme) et nous vous proposerons des pistes concrètes pour y répondre.
       </p>
       <!-- Form -->
-      <form class="w-full max-w-lg flex flex-col items-center font-normal">
-        <textarea
-          class="w-full h-24 p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4 resize-none italic font-normal text-sm"
+      <form action="https://formspree.io/f/movwlrzp"
+      method="POST" class="w-full max-w-lg flex flex-col items-center font-normal">
+        <textarea name="message"
+          class="w-full h-28 p-4 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4 resize-none font-normal text-sm"
           placeholder="Exprimé votre besoin ou autre ici… ?" required></textarea>
         <div class="w-full flex items-center mb-4 bg-white rounded-md ">
           <span class="inline-flex items-center px-3 bg-white text-gray-500">
@@ -56,8 +58,8 @@
               <rect x="2" y="4" width="20" height="16" rx="2" />
             </svg>
           </span>
-          <input type="email"
-            class="w-full p-3 border border-gray-200 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500 font-normal italic text-sm"
+          <input type="email" name="email"
+            class="w-full p-3 border border-gray-200 rounded-r-md focus:outline-none focus:ring-2 focus:ring-blue-500 font-normal text-sm"
             placeholder="Votre adresse mail" required />
         </div>
         <button type="submit"
